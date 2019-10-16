@@ -2,10 +2,8 @@
 
 using namespace std;
 
-
 int N, r, c = 0;
 int cnt=0;
-
 
 void Z(int size, int y, int x){
     if(size == 2){
