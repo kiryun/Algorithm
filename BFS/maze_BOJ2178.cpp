@@ -51,8 +51,9 @@ void bfs()
                 continue;
             }
             
-
+            //이전의 거리값에서 1만큼 더해준다.
             dist[nx][ny] = dist[temp.first][temp.second] + 1;
+            //n, m까지 왔다면 return (이건 필요없을듯?)
             if(nx == n and ny == m){
                 return;
             }
