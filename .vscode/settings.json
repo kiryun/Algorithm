@@ -60,6 +60,13 @@
         "unordered_map": "cpp",
         "utility": "cpp",
         "vector": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "__tree": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "unordered_set": "cpp"
     }
 }
