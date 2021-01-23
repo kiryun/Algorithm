@@ -109,6 +109,10 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 어차피 주어진 범위가 `1 <= num <= 3999` 뿐이라 대입으로 하면 쉽다.
 
+* 주어진 값 num을 배열로 변경한다. ex) 1994  -> `arr` = [1, 9, 9, 4]
+* 각 자리수가 의미하는 수를 `table` 에서 찾는다. `arr[0]` 의 경우 1000을 의미하므로 "M"을 찾는다.
+* result에 값을 넣어서 return 한다.
+
 ```swift
 class Solution {
     let table: [Int: String] = [
@@ -180,7 +184,6 @@ class Solution {
     func intToRoman(_ num: Int) -> String {
         var result: String = ""
         
-        var n = num
         let arr = digits(num)
         for i in 0 ..< arr.count{
             let k = arr[i] * pow(10, arr.count-i-1)
@@ -194,8 +197,6 @@ class Solution {
 let solution = Solution()
 print(solution.intToRoman(10))
 ```
-
-
 
 
 
